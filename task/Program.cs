@@ -63,7 +63,11 @@ int maxMinusMinArray(int[,] array)
   }
    
 }
+
+void Print(int res)
+{
+    Console.Write($"Разница между суммой максимумов и суммой минимумов -> {maxMinusMinArray(GenerateArray(3, 5))}");
+}
  
 PrintArray(GenerateArray(3, 5));
-int result = maxMinusMinArray(GenerateArray(3, 5));
-Console.WriteLine($"Разница между суммой максимумов и суммой минимумов -> {result}");
+Print(maxMinusMinArray(GenerateArray(3, 5)));
